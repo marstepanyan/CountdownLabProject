@@ -1,6 +1,3 @@
-# num = input('enter number: ')
-
-
 def ten_segment_num(number):
     rows = [''] * 3
 
@@ -47,6 +44,3 @@ def ten_segment_num(number):
             rows[2] += ' __|'
 
     return '\n'.join(rows)
-
-
-print(ten_segment_num(num))
