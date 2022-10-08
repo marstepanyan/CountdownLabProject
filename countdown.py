@@ -11,4 +11,4 @@ def countdown(s):
         s -= 1
 
 
-print(countdown(12))
+# print(countdown(5))
