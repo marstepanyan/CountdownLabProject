@@ -7,6 +7,10 @@ print('enter time')
 hours = input('hours: ')
 minutes = input('minutes: ')
 seconds = input('seconds: ')
+
+if not hours.isnumeric() or not minutes.isnumeric() or not seconds.isnumeric():
+    raise TypeError('Enter an positive integer number!')
+
 try:
     while True:
         if len(hours) < 2:
@@ -19,6 +23,13 @@ try:
         int_h = int(hours)
         int_m = int(minutes)
         int_s = int(seconds)
+
+        if int_h < 0 or int_h > 23:
+            raise ValueError('Hours must change from 0 to 23')
+        if int_m < 0 or int_m > 59:
+            raise ValueError('Minutes must change from 0 to 59')
+        if int_s < 0 or int_s > 59:
+            raise ValueError('Seconds must change from 0 to 59')
 
         seconds_in_total = int_h * 3600 + int_m * 60 + int_s
 
