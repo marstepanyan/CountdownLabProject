@@ -3,13 +3,13 @@ import time
 import os
 
 
-print('enter time')
-hours = input('hours: ')
-minutes = input('minutes: ')
-seconds = input('seconds: ')
+print('Enter time')
+hours = input('Hours: ')
+minutes = input('Minutes: ')
+seconds = input('Seconds: ')
 
 if not hours.isnumeric() or not minutes.isnumeric() or not seconds.isnumeric():
-    raise TypeError('Enter an positive integer number!')
+    raise TypeError('Enter a positive integer number!')
 
 try:
     while True:
