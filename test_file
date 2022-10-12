@@ -1,0 +1,4 @@
+When inputs are string, float, negative integer 'TypeError' is raised asking to enter a positive integer number
+When input for hours is over 23 'ValueError' is raised and says that hours must change from 0 to 23
+When input for minutes is over 59 'ValueError' is raised and says that minutes must change from 0 to 59
+When input for seconds is over 59 'ValueError' is raised and says that seconds must change from 0 to 59
